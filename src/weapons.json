@@ -1,0 +1,78 @@
+[
+    {
+        "collection": "Vertigo",
+        "weaponName": "Dual Berettas",
+        "skinName": "Demolition",
+        "quality": "Restricted",
+        "tradupInput": false,
+        "floatMin": 0.26,
+        "floatMax": 0.60,
+        "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpos7asPwJfwPz3ZTxM69mknY6OqPrxN7LEm1Rd6dd2j6eZ8dyiiVGw8kNlZ2n1doKXdQNrMFqDrgDokOrogpG16JXKyXJgvnEl-z-DyNhnIhGa/360fx360f",
+        "collectionURL": "/collections/vertigo.webp"
+    },
+    {
+        "collection": "Vertigo",
+        "weaponName": "AK-47",
+        "skinName": "Black Laminate",
+        "quality": "Mil-Spec",
+        "tradupInput": true,
+        "floatMin": 0.06,
+        "floatMax": 0.80,
+        "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhoyszJemkV4N27q4KcqPv9NLPFqWdQ-sJ0xOqUpdj2iVbm_Es9Z2D2IdOccAQ7ZA2F-FG8w-3rhcTpvsnJwHph6yQ8pSGKy_qypRo/360fx360f",
+        "collectionURL": "/collections/vertigo.webp"
+    },
+    {
+        "collection": "Vertigo",
+        "weaponName": "P90",
+        "skinName": "Glacier Mesh",
+        "quality": "Mil-Spec",
+        "tradupInput": true,
+        "floatMin": 0.06,
+        "floatMax": 0.80,
+        "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopuP1FBRw7P7NYjV969C3l4mOhcj4OrzZglRd6dd2j6eWod6g2w3t-0M4Zmj7ItCTelJrNwrVrADtxrvp1J6-u5rImnFjuHR2-z-DyIleMnKO/360fx360f",
+        "collectionURL": "/collections/vertigo.webp"
+    },
+    {
+        "collection": "Vertigo",
+        "weaponName": "PP-Bizon",
+        "skinName": "Carbon Fiber",
+        "quality": "Industrial",
+        "tradupInput": true,
+        "floatMin": 0.00,
+        "floatMax": 0.12,
+        "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpotLO_JAlf0v73cjxQ7tO4q4aClfLmDLfYkWNF18lwmO7Eu4723FK2rxY4NW7ydoXHewQ8MFrV81fqkL3n0cC_75jJynJl73N04H7D30vgzjRtMyY/360fx360f",
+        "collectionURL": "/collections/vertigo.webp"
+    },
+    {
+        "collection": "Vertigo",
+        "weaponName": "MAC-10",
+        "skinName": "Urban DDPAT",
+        "quality": "Consumer",
+        "tradupInput": true,
+        "floatMin": 0.06,
+        "floatMax": 0.80,
+        "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf2-r3dTlS7ciJgZKJqPv9NLPFqWdQ-sJ0xLnCp9X22FK3r0FpZTymJYKUJFdtaF3Wr1i7xe_ojJO8uMmfnHIwvSQ8pSGKXMgPnyk/360fx360f",
+        "collectionURL": "/collections/vertigo.webp"
+    },
+    {
+        "collection": "Vertigo",
+        "weaponName": "XM1014",
+        "skinName": "Urban Perforated",
+        "quality": "Consumer",
+        "tradupInput": true,
+        "floatMin": 0.06,
+        "floatMax": 0.80,
+        "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgporrf0e1Y07ODYTilD_NmJkI-fhMjhIbnQmFRd4cJ5ntbN9J7yjRrj_kI_YjzxJIOcJwdsaArYrwe4xbzr1sK1uM_Lyydgv3NxtivdmxKwn1gSOQlofbgN/360fx360f",
+        "collectionURL": "/collections/vertigo.webp"
+    },
+    {
+        "collection": null,
+        "weaponName": null,
+        "skinName": null,
+        "quality": null,
+        "tradupInput": null,
+        "floatMin": null,
+        "floatMax": null,
+        "imageURL": null
+    }
+]

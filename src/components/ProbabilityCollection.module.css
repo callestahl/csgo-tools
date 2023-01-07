@@ -1,0 +1,33 @@
+.card {
+    display: flex;
+    background-color: var(--small-card-color);
+    border-radius: 31px;
+    width: 135px;
+    height: 60px;
+}
+
+.parent {
+    margin: 15px 0 0 10px;
+}
+
+.collection {
+    scale: 60%;
+    margin: 0 0 0 0;
+    width: 70px;
+}
+
+.probability {
+    position: relative;
+    left: -5px;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+}
+
+.probability>h6 {
+    margin: 15px 0 0 0;
+}
+
+.title {
+    margin: 0 0 3px 20px;
+}

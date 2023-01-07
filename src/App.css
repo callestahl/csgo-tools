@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  --main-font: 'Karla', sans-serif;
+  --background-color: #201E1E;
+  --accent-color: #8B4ABE;
+  --small-card-color: #121111;
+  --big-card-color: #303030;
+  --button-gradient-color: #FF00C7;
+  --clear-button-outline-color: #FFFFFF;
+  --searchfield-color: #D9D9D9;
+
+  --consumer-color: #b0c3d9;
+  --industrial-color: #5e98d9;
+  --mil-spec-color: #4b69ff;
+  --restricted-color: #8847ff;
+  --classified-color: #d32ee6;
+  --covert-color: #eb4b4b;
+
+  --breakpoint: 1120px;
+
+}
+
+* {
+  font-family: var(--main-font);
+  font-weight: 300;
+  color: var(--clear-button-outline-color);
+}
+
+input,
+select {
+  height: 40px;
+  border-radius: 6px;
+  border-width: 0px;
+  background-color: var(--searchfield-color);
+  color: var(--small-card-color);
+  margin-bottom: 1vh;
+}
+
+select {
+  width: 50%;
+}
+
+select+select {
+  margin-left: 1vw;
+}
+
+p {
+  margin: 0 5vw 0 2vw;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+}
+
+h1 {
+  margin-left: 2vw;
+  margin-right: 5vw;
+  margin-bottom: 1vh;
+}
+
+h4 {
+  margin: 0 0 0 0;
+}
+
+h5 {
+  margin: 0 0 0 0;
+  font-size: 14px;
+}
+
+h6 {
+  width: 100%;
+  margin-bottom: 0.4vh;
+  margin-left: 0px;
+}
+
+
+html {
+  background-color: var(--background-color);
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  transition: scale 0.5s;
+}
+
+button:active {
+  scale: 90%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.big-card-container {
+  height: 83vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.big-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:start;
+  background-color: var(--big-card-color);
+  height: 100%;
+  border-radius: 25;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  width: 18vw;
+  min-width: 310px;
+  max-width: 400px;
+  border-radius: 31px;
+  border: 1px solid var(--accent-color);
+  overflow: scroll;
+}
+
+.outcomes {
+  align-items: flex-start;
+}
+
+
+#info-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 42px;
+  height: 42px;
+  border-radius: 30px;
+  border: none;
+  margin: 10px 0 0 0;
+  background-image: linear-gradient(to top right, var(--accent-color), var(--button-gradient-color));
+  z-index: 1;
+}
+
+#info-button>img {
+  height: 20px;
+  margin-bottom: 5px;
+}
+
+.search-filters {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  width: 18vw;
+  min-width: 310px;
+  max-width: 400px;
+}
+
+.search-filters-dropdowns-div {
+  display: flex;
+}
+
+@media (max-width: 1120px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+
+  #info-button {
+    position: initial;
+  }
+
+  .info-button-container {
+    display: flex;
+    justify-content: end;
+    margin: 0 0 10px 0;
+  }
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 85%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.inputs-buttons {
+  display: flex;
+  width: 90%;
+  max-width: 400px;
+  height: 15%;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.inputs-buttons>button {
+  height: 50px;
+  border-radius: 10px;
+  background-color: var(--big-card-color);
+  margin: 0 0 0 0;
+}
+
+.button-calculate-inputs {
+  width: 140px;
+  background-image: linear-gradient(to right, var(--button-gradient-color), var(--accent-color));
+}
+
+.button-radomize-inputs {
+  width: 50px;
+  border: 2px solid var(--accent-color);
+}
+
+.button-clear-inputs {
+  width: 50px;
+  border: 2px solid var(--clear-button-outline-color);
+}
+
+/* disable arrows in number inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+  -moz-appearance: textfield;
+}
+
+.outcomes-titles {
+  margin: 3vh 0 0 20px;
+  font-size: 20px;
+}
+
+.collections {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skins {
+ display: flex;
+ flex-direction: column;
+ width: 100%;
+ margin-bottom: 30px;
+}
