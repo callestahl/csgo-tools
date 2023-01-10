@@ -19,7 +19,9 @@ function App() {
 
   const [currentSearchWord, setCurrentSearchWord] = useState(null)
   const [searchResults, setSearchResults] = useState(null)
-  const [currentInputs, setCurrentInputs] = useState(null)
+  const [currentInputs, setCurrentInputs] = useState([
+    null, null, null, null, null, null, null, null, null, null,
+  ])
   const [currentInputsFloats, setCurrentInputsFloats] = useState(null)
   const [outcomes, setOutcomes] = useState(null)
   const [showInfo, setShowInfo] = useState(false)
@@ -62,136 +64,7 @@ function App() {
             <input type='text'></input>
           </div>
           <div className='big-card'>
-            <SearchResult skin={
-              {
-                "collection": "Vertigo",
-                "weaponName": "AK-47",
-                "skinName": "Black Laminate",
-                "quality": "Mil-Spec",
-                "tradupInput": true,
-                "floatMin": 0.06,
-                "floatMax": 0.80,
-                "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhoyszJemkV4N27q4KcqPv9NLPFqWdQ-sJ0xOqUpdj2iVbm_Es9Z2D2IdOccAQ7ZA2F-FG8w-3rhcTpvsnJwHph6yQ8pSGKy_qypRo/360fx360f",
-                "collectionURL": "/collections/vertigo.webp"
-              }
-            } />
-            <SearchResult skin={
-              {
-                "collection": "Vertigo",
-                "weaponName": "AK-47",
-                "skinName": "Black Laminate",
-                "quality": "Mil-Spec",
-                "tradupInput": true,
-                "floatMin": 0.06,
-                "floatMax": 0.80,
-                "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhoyszJemkV4N27q4KcqPv9NLPFqWdQ-sJ0xOqUpdj2iVbm_Es9Z2D2IdOccAQ7ZA2F-FG8w-3rhcTpvsnJwHph6yQ8pSGKy_qypRo/360fx360f",
-                "collectionURL": "/collections/vertigo.webp"
-              }
-            } />
-            <SearchResult skin={
-              {
-                "collection": "Vertigo",
-                "weaponName": "AK-47",
-                "skinName": "Black Laminate",
-                "quality": "Mil-Spec",
-                "tradupInput": true,
-                "floatMin": 0.06,
-                "floatMax": 0.80,
-                "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhoyszJemkV4N27q4KcqPv9NLPFqWdQ-sJ0xOqUpdj2iVbm_Es9Z2D2IdOccAQ7ZA2F-FG8w-3rhcTpvsnJwHph6yQ8pSGKy_qypRo/360fx360f",
-                "collectionURL": "/collections/vertigo.webp"
-              }
-            } />
-            <SearchResult skin={
-              {
-                "collection": "Vertigo",
-                "weaponName": "AK-47",
-                "skinName": "Black Laminate",
-                "quality": "Mil-Spec",
-                "tradupInput": true,
-                "floatMin": 0.06,
-                "floatMax": 0.80,
-                "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhoyszJemkV4N27q4KcqPv9NLPFqWdQ-sJ0xOqUpdj2iVbm_Es9Z2D2IdOccAQ7ZA2F-FG8w-3rhcTpvsnJwHph6yQ8pSGKy_qypRo/360fx360f",
-                "collectionURL": "/collections/vertigo.webp"
-              }
-            } />
-            <SearchResult skin={
-              {
-                "collection": "Vertigo",
-                "weaponName": "AK-47",
-                "skinName": "Black Laminate",
-                "quality": "Mil-Spec",
-                "tradupInput": true,
-                "floatMin": 0.06,
-                "floatMax": 0.80,
-                "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhoyszJemkV4N27q4KcqPv9NLPFqWdQ-sJ0xOqUpdj2iVbm_Es9Z2D2IdOccAQ7ZA2F-FG8w-3rhcTpvsnJwHph6yQ8pSGKy_qypRo/360fx360f",
-                "collectionURL": "/collections/vertigo.webp"
-              }
-            } />
-            <SearchResult skin={
-              {
-                "collection": "Vertigo",
-                "weaponName": "AK-47",
-                "skinName": "Black Laminate",
-                "quality": "Mil-Spec",
-                "tradupInput": true,
-                "floatMin": 0.06,
-                "floatMax": 0.80,
-                "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhoyszJemkV4N27q4KcqPv9NLPFqWdQ-sJ0xOqUpdj2iVbm_Es9Z2D2IdOccAQ7ZA2F-FG8w-3rhcTpvsnJwHph6yQ8pSGKy_qypRo/360fx360f",
-                "collectionURL": "/collections/vertigo.webp"
-              }
-            } />
-            <SearchResult skin={
-              {
-                "collection": "Vertigo",
-                "weaponName": "AK-47",
-                "skinName": "Black Laminate",
-                "quality": "Mil-Spec",
-                "tradupInput": true,
-                "floatMin": 0.06,
-                "floatMax": 0.80,
-                "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhoyszJemkV4N27q4KcqPv9NLPFqWdQ-sJ0xOqUpdj2iVbm_Es9Z2D2IdOccAQ7ZA2F-FG8w-3rhcTpvsnJwHph6yQ8pSGKy_qypRo/360fx360f",
-                "collectionURL": "/collections/vertigo.webp"
-              }
-            } />
-            <SearchResult skin={
-              {
-                "collection": "Vertigo",
-                "weaponName": "AK-47",
-                "skinName": "Black Laminate",
-                "quality": "Mil-Spec",
-                "tradupInput": true,
-                "floatMin": 0.06,
-                "floatMax": 0.80,
-                "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhoyszJemkV4N27q4KcqPv9NLPFqWdQ-sJ0xOqUpdj2iVbm_Es9Z2D2IdOccAQ7ZA2F-FG8w-3rhcTpvsnJwHph6yQ8pSGKy_qypRo/360fx360f",
-                "collectionURL": "/collections/vertigo.webp"
-              }
-            } />
-            <SearchResult skin={
-              {
-                "collection": "Vertigo",
-                "weaponName": "AK-47",
-                "skinName": "Black Laminate",
-                "quality": "Mil-Spec",
-                "tradupInput": true,
-                "floatMin": 0.06,
-                "floatMax": 0.80,
-                "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhoyszJemkV4N27q4KcqPv9NLPFqWdQ-sJ0xOqUpdj2iVbm_Es9Z2D2IdOccAQ7ZA2F-FG8w-3rhcTpvsnJwHph6yQ8pSGKy_qypRo/360fx360f",
-                "collectionURL": "/collections/vertigo.webp"
-              }
-            } />
-            <SearchResult skin={
-              {
-                "collection": "Vertigo",
-                "weaponName": "AK-47",
-                "skinName": "Black Laminate",
-                "quality": "Mil-Spec",
-                "tradupInput": true,
-                "floatMin": 0.06,
-                "floatMax": 0.80,
-                "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhoyszJemkV4N27q4KcqPv9NLPFqWdQ-sJ0xOqUpdj2iVbm_Es9Z2D2IdOccAQ7ZA2F-FG8w-3rhcTpvsnJwHph6yQ8pSGKy_qypRo/360fx360f",
-                "collectionURL": "/collections/vertigo.webp"
-              }
-            } />
+            
           </div>
         </div>
         <div className='big-card-container'>
@@ -200,42 +73,12 @@ function App() {
           </h1>
           <div className='big-card'>
             <div className='inputs'>
-              <Input skin={
-                {
-                  "collection": "Vertigo",
-                  "weaponName": "AK-47",
-                  "skinName": "Black Laminate",
-                  "quality": "Mil-Spec",
-                  "tradupInput": true,
-                  "floatMin": 0.06,
-                  "floatMax": 0.80,
-                  "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhoyszJemkV4N27q4KcqPv9NLPFqWdQ-sJ0xOqUpdj2iVbm_Es9Z2D2IdOccAQ7ZA2F-FG8w-3rhcTpvsnJwHph6yQ8pSGKy_qypRo/360fx360f",
-                  "collectionURL": "/collections/vertigo.webp"
-                }
-              } />
-              <Input skin={
-                {
-                  "collection": "Vertigo",
-                  "weaponName": "AK-47",
-                  "skinName": "Black Laminate",
-                  "quality": "Mil-Spec",
-                  "tradupInput": true,
-                  "floatMin": 0.06,
-                  "floatMax": 0.80,
-                  "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhoyszJemkV4N27q4KcqPv9NLPFqWdQ-sJ0xOqUpdj2iVbm_Es9Z2D2IdOccAQ7ZA2F-FG8w-3rhcTpvsnJwHph6yQ8pSGKy_qypRo/360fx360f",
-                  "collectionURL": "/collections/vertigo.webp"
-                }
-              } />
-              <Input skin={null} />
-              <Input skin={null} />
-              <Input skin={null} />
-              <Input skin={null} />
-              <Input skin={null} />
-              <Input skin={null} />
-              <Input skin={null} />
-              <Input skin={null} />
-              
-              </div>
+              {
+                currentInputs.map((skin) => 
+                <Input skin={skin} />
+                )
+              }
+            </div>
             <div className='inputs-buttons'>
               <button className='button-clear-inputs'>
                 <img src={xWhite}></img>
@@ -252,184 +95,14 @@ function App() {
             Outcomes
           </h1>
           <div className='big-card outcomes'>
-              <h2 className='outcomes-titles'>probability by collections:</h2>
-              <div className='collections'>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-                <ProbabilityCollection collection={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "probability": 50.12,
-                }}/>
-              </div>
-              <h2 className='outcomes-titles'>probability by skins:</h2>
-              <div className='skins'>
-                <ProbabilitySkin skin={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopuP1FBRw7P7NYjV969C3l4mOhcj4OrzZglRd6dd2j6eWod6g2w3t-0M4Zmj7ItCTelJrNwrVrADtxrvp1J6-u5rImnFjuHR2-z-DyIleMnKO/360fx360f",
-                  "probability": 50.12,
-                  "wear": ".888888888",
-                  "weaponName": "P90",
-                  "skinName": "Glacier Mesh",
-                }}/>
-                <ProbabilitySkin skin={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopuP1FBRw7P7NYjV969C3l4mOhcj4OrzZglRd6dd2j6eWod6g2w3t-0M4Zmj7ItCTelJrNwrVrADtxrvp1J6-u5rImnFjuHR2-z-DyIleMnKO/360fx360f",
-                  "probability": 50.12,
-                  "wear": ".888888888",
-                  "weaponName": "P90",
-                  "skinName": "Glacier Mesh",
-                }}/>
-                <ProbabilitySkin skin={{
-                  "collection": "Vertigo",
-                  "collectionURL": "/collections/vertigo.webp",
-                  "imageURL": "https://community.cloudflare.steamstatic.com/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopuP1FBRw7P7NYjV969C3l4mOhcj4OrzZglRd6dd2j6eWod6g2w3t-0M4Zmj7ItCTelJrNwrVrADtxrvp1J6-u5rImnFjuHR2-z-DyIleMnKO/360fx360f",
-                  "probability": 50.12,
-                  "wear": ".888888888",
-                  "weaponName": "P90",
-                  "skinName": "Glacier Mesh",
-                }}/>
-              </div>
+            <h2 className='outcomes-titles'>probability by collections:</h2>
+            <div className='collections'>
+
+            </div>
+            <h2 className='outcomes-titles'>probability by skins:</h2>
+            <div className='skins'>
+
+            </div>
           </div>
         </div>
       </main>

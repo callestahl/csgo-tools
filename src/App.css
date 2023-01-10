@@ -129,7 +129,8 @@ button:active {
   max-width: 400px;
   border-radius: 31px;
   border: 1px solid var(--accent-color);
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .outcomes {
