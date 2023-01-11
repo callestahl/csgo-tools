@@ -1,5 +1,6 @@
 import './App.css'
 import { useState, useEffect } from 'react'
+import { getCollections, getSearchResults } from './api'
 
 //asset imports
 import info from './assets/info.svg'
@@ -17,8 +18,10 @@ import ProbabilitySkin from './components/ProbabilitySkin'
 
 function App() {
 
-  const [currentSearchWord, setCurrentSearchWord] = useState(null)
-  const [searchResults, setSearchResults] = useState(null)
+  const [currentSearchWord, setCurrentSearchWord] = useState('')
+  const [currentCollection, setCurrentCollection] = useState('')
+  const [currentQuality, setCurrentQuality] = useState('')
+  const [searchResults, setSearchResults] = useState([])
   const [currentInputs, setCurrentInputs] = useState([
     null, null, null, null, null, null, null, null, null, null,
   ])
@@ -29,6 +32,24 @@ function App() {
   const toggleInfo = () => {
     setShowInfo(!showInfo)
   }
+
+  const handleChangeSearchWord = (event) => {
+    setCurrentSearchWord(event.target.value)
+  }
+
+  const handleChangeCollection = (event) => {
+    setCurrentCollection(event.target.value)
+  } 
+
+  const handleChangeQuality = (event) => {
+    setCurrentQuality(event.target.value)
+  } 
+
+  //Updates searchresults when when any of the search parameters change
+  useEffect(() => {
+    setSearchResults(getSearchResults(currentSearchWord, currentCollection, currentQuality))
+
+  }, [currentSearchWord, currentCollection, currentQuality]);
 
   return (
 
@@ -50,21 +71,30 @@ function App() {
           </h1>
           <div className='search-filters'>
             <div className='search-filters-dropdowns-div'>
-              <select>
-                <option>Consumer (Gray)</option>
-                <option>Industrial (Light Blue)</option>
-                <option>Mil-Spec (Blue)</option>
-                <option>Restricted (Purple)</option>
-                <option>Classified (Pink)</option>
+              <select onChange={handleChangeQuality} id='quality-select'>
+                <option value=''>Select Quality</option>
+                <option value='Consumer'>Consumer (Gray)</option>
+                <option value='Industrial'>Industrial (Light Blue)</option>
+                <option value='Mil-Spec'>Mil-Spec (Blue)</option>
+                <option value='Restricted'>Restricted (Purple)</option>
+                <option value='Classified'>Classified (Pink)</option>
               </select>
-              <select>
+              <select onChange={handleChangeCollection} id='collection-select'>
+                <option value=''>Select Collection</option>
+                {getCollections().map((collectionName) => (
+                  <option value={collectionName}>{collectionName}</option>
+                ))}
 
               </select>
             </div>
-            <input type='text'></input>
+            <input onChange={handleChangeSearchWord} placeholder='Search Skin...' type='text'></input>
           </div>
           <div className='big-card'>
-            
+            {
+              searchResults.map((skin) => (
+                <SearchResult skin={skin}/>
+              ))
+            }
           </div>
         </div>
         <div className='big-card-container'>
@@ -74,8 +104,8 @@ function App() {
           <div className='big-card'>
             <div className='inputs'>
               {
-                currentInputs.map((skin) => 
-                <Input skin={skin} />
+                currentInputs.map((skin) =>
+                  <Input skin={skin} />
                 )
               }
             </div>
