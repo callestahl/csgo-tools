@@ -6,11 +6,12 @@ import styles from './ProbabilitySkin.module.css'
  * @param {Object} props.skin - contains info about the outcome
  * @param {String} props.skin.collection - name of the collection the skin is part of
  * @param {String} props.skin.collectionURL - url to image of collection
- * @param {String} props.skin.imageURL -url to image of skin
- * @param {Number} props.skin.probability - float number representing the probability of the skin being choosen
- * @param {Number} props.skin.wear - float number that the skin will have if it is choosen
+ * @param {String} props.skin.imageURL - url to image of skin
  * @param {String} props.skin.weaponName - name of the weapon
  * @param {String} props.skin.skinName - name of the skin
+ * 
+ * @param {Number} props.probability - float number representing the probability of the skin being choosen
+ * @param {Number} props.wear - float number that the skin will have if it is choosen
  * @returns {JSX.Element}
  */
 const ProbabilitySkin = (props) => {
@@ -27,7 +28,7 @@ const ProbabilitySkin = (props) => {
                         probability:
                     </h6>
                     <h5>
-                        {props.skin.probability + '%'}
+                        {props.probability + '%'}
                     </h5>
                 </div>
                 <div className={styles.wear}>
@@ -35,7 +36,7 @@ const ProbabilitySkin = (props) => {
                         wear value:
                     </h6>
                     <h5>
-                        {props.skin.wear}
+                        {props.wear}
                     </h5>
                 </div>
             </div>
