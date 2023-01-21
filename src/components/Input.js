@@ -3,6 +3,7 @@ import styles from './Input.module.css'
 import random from '../assets/random.svg'
 import remove from '../assets/xWhite.svg'
 import duplicate from '../assets/duplicate.svg'
+import { randomizeFloat } from '../api'
 
 
 
@@ -16,6 +17,7 @@ import duplicate from '../assets/duplicate.svg'
  * @param {Function} props.removeInput - function to remove this input
  * @param {Function} props.addInput - function to use when duplicating input
  * @param {Function} props.setFloat - set float of the input
+ * @param {Function} props.randomizeFloat - set the float/wear to a random value between floatMin and floatMax
  * @returns {JSX.Element} the input element
  * @returns {JSX.Element} empty if props.skin is null 
  */
@@ -38,9 +40,9 @@ const Input = (props) => {
 
     const handleChange = (event) => {
         const float = event.target.value.replace(',', '.')
-        if(float === '') {
+        if (float === '') {
             props.setFloat(props.index, null)
-            
+
             return
         }
         props.setFloat(props.index, Number(float))
@@ -71,7 +73,8 @@ const Input = (props) => {
                         <h6 title={props.skin.floatMin + '-' + props.skin.floatMax} className={styles.wearValueText}>wear value:</h6>
                         <input type='number' defaultValue={props.floats[props.index]} onChange={handleChange} title={props.skin.floatMin + '-' + props.skin.floatMax} placeholder={props.skin.floatMin + '-' + props.skin.floatMax} className={checkFloat(props.skin.floatMin, props.skin.floatMax, props.floats[props.index]) ? styles.input : styles.inputError}></input>
                     </div>
-                    <button className={styles.randomize}>
+                    <button className={styles.randomize} onClick={() => props.randomizeFloat(props.index, props.skin.floatMin, props.skin.floatMax)
+                    }>
                         <img className={styles.buttonImage} src={random}></img>
                     </button>
                     <button onClick={duplicate} className={styles.duplicate}>

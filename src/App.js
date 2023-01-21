@@ -53,6 +53,12 @@ function App() {
     setOutcome(calculateOutcomes(currentInputs, currentInputsFloats))
   }
 
+  const randomizeFloat = (index, floatMin, floatMax) => {
+    const currentState = [...currentInputsFloats]
+    currentState.splice(index, 1, (Math.random() * (Number(floatMax) - Number(floatMin)) + Number(floatMin)).toFixed(5))
+    setCurrentInputsFloats(currentState)
+  }
+
   //returns the index of the inserted skin or -1 if not inserted
   const addInput = (skin) => {
     let currentState = [...currentInputs]
@@ -165,7 +171,7 @@ function App() {
             <div className='inputs'>
               {
                 currentInputs.map((skin, index) =>
-                  <Input floats={currentInputsFloats} setFloat={setFloat} addInput={addInput} removeInput={removeInput} index={index} skin={skin} />
+                  <Input randomizeFloat={randomizeFloat} floats={currentInputsFloats} setFloat={setFloat} addInput={addInput} removeInput={removeInput} index={index} skin={skin} />
                 )
               }
             </div>
