@@ -1,6 +1,6 @@
 import './App.css'
 import { useState, useEffect } from 'react'
-import { getCollections, getSearchResults, calculateOutcomes } from './api'
+import { getCollections, getSearchResults, calculateOutcomes, getRandomSkins } from './api'
 
 //asset imports
 import info from './assets/info.svg'
@@ -57,6 +57,12 @@ function App() {
     const currentState = [...currentInputsFloats]
     currentState.splice(index, 1, (Math.random() * (Number(floatMax) - Number(floatMin)) + Number(floatMin)).toFixed(5))
     setCurrentInputsFloats(currentState)
+  }
+
+  const randomizeInputs = (quality = '') => {
+    const InputSAndFloats = getRandomSkins(currentInputs, currentInputsFloats ,quality)
+    setCurrentInputs(InputSAndFloats[0])
+    setCurrentInputsFloats(InputSAndFloats[1])
   }
 
   //returns the index of the inserted skin or -1 if not inserted
@@ -179,7 +185,7 @@ function App() {
               <button className='button-clear-inputs' onClick={clearInputs} >
                 <img src={xWhite}></img>
               </button>
-              <button className='button-radomize-inputs'>
+              <button className='button-radomize-inputs' onClick={() => randomizeInputs(currentQuality)}>
                 <img src={random}></img>
               </button>
               <button className='button-calculate-inputs' onClick={() => calculate(currentInputs, currentInputsFloats)} ><h3>calculate</h3></button>
