@@ -59,10 +59,18 @@ function App() {
     setCurrentInputsFloats(currentState)
   }
 
-  const randomizeInputs = (quality = '') => {
-    const InputSAndFloats = getRandomSkins(currentInputs, currentInputsFloats ,quality)
+  const randomizeInputs = (quality) => {
+    const InputSAndFloats = getRandomSkins(currentInputs, currentInputsFloats ,quality, searchResults)
+    if (InputSAndFloats === null) {
+      showErrorMessage('No skins match your search filters. Change the add inputs filters and try again')
+      return
+    }
     setCurrentInputs(InputSAndFloats[0])
     setCurrentInputsFloats(InputSAndFloats[1])
+  }
+
+  const showErrorMessage = (message) => {
+
   }
 
   //returns the index of the inserted skin or -1 if not inserted

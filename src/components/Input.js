@@ -71,7 +71,7 @@ const Input = (props) => {
                     <img className={styles.collection} title={props.skin.collection} src={props.skin.collectionURL}></img>
                     <div className={styles.wearValueDiv}>
                         <h6 title={props.skin.floatMin + '-' + props.skin.floatMax} className={styles.wearValueText}>wear value:</h6>
-                        <input type='number' value={props.floats[props.index]} defaultValue={props.floats[props.index]} onChange={handleChange} title={props.skin.floatMin + '-' + props.skin.floatMax} placeholder={props.skin.floatMin + '-' + props.skin.floatMax} className={checkFloat(props.skin.floatMin, props.skin.floatMax, props.floats[props.index]) ? styles.input : styles.inputError}></input>
+                        <input type='number' value={props.floats[props.index]} onChange={handleChange} title={props.skin.floatMin + '-' + props.skin.floatMax} placeholder={props.skin.floatMin + '-' + props.skin.floatMax} className={checkFloat(props.skin.floatMin, props.skin.floatMax, props.floats[props.index]) ? styles.input : styles.inputError}></input>
                     </div>
                     <button className={styles.randomize} onClick={() => props.randomizeFloat(props.index, props.skin.floatMin, props.skin.floatMax)
                     }>
