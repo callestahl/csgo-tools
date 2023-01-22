@@ -60,7 +60,7 @@ function App() {
   }
 
   const randomizeInputs = (quality) => {
-    const InputSAndFloats = getRandomSkins(currentInputs, currentInputsFloats ,quality, searchResults)
+    const InputSAndFloats = getRandomSkins(currentInputs, currentInputsFloats, quality, searchResults)
     if (InputSAndFloats === null) {
       showErrorMessage('No skins match your search filters. Change the add inputs filters and try again')
       return
@@ -71,6 +71,15 @@ function App() {
 
   const showErrorMessage = (message) => {
 
+  }
+
+  const clearFilters = () => {
+    setCurrentCollection('')
+    setCurrentSearchWord('')
+    //only reset quality if inputs is empty
+    if (currentInputs[0] === null) {
+      setCurrentQuality('')
+    }
   }
 
   //returns the index of the inserted skin or -1 if not inserted
@@ -133,7 +142,6 @@ function App() {
   }, [currentInputs]);
 
   return (
-
     <div className="App">
       {
         showInfo &&
@@ -159,15 +167,18 @@ function App() {
                 <option value='Restricted'>Restricted (Purple)</option>
                 <option value='Classified'>Classified (Pink)</option>
               </select>
-              <select onChange={changeCollection} id='collection-select'>
+              <select id='collection-select' value={currentCollection} onChange={changeCollection} >
                 <option value=''>Select Collection</option>
                 {getCollections().map((collectionName) => (
                   <option key={collectionName} value={collectionName}>{collectionName}</option>
                 ))}
 
               </select>
+              <button className='clear-input-filters-button' onClick={clearFilters}>
+                <img src={x}></img>
+              </button>
             </div>
-            <input onChange={changeSearchWord} placeholder='Search Skin...' type='text'></input>
+            <input onChange={changeSearchWord} value={currentSearchWord} placeholder='Search Skin...' type='text'></input>
           </div>
           <div className='big-card'>
             {
@@ -210,7 +221,7 @@ function App() {
                 <h2 className='outcomes-titles'>probability by collections:</h2>
                 <div className='collections'>
                   {
-                    outcome.collections.map((collection, index) => 
+                    outcome.collections.map((collection, index) =>
                       <ProbabilityCollection collection={collection} probability={outcome.collectionsProbabiliy[index]} collectionURL={outcome.collectionsURL[index]} />
                     )
                   }

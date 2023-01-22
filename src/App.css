@@ -167,6 +167,7 @@ button:active {
 
 .search-filters {
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
   margin-left: 1vw;
   margin-right: 1vw;
@@ -264,4 +265,15 @@ input[type=number]{
  flex-direction: column;
  width: 100%;
  margin-bottom: 30px;
+}
+
+.clear-input-filters-button {
+  height: 40px;
+  border-radius: 6px;
+  border-width: 0px;
+  background-color: var(--searchfield-color);
+  color: var(--small-card-color);
+  margin-bottom: 1vh;
+  margin-left: 1vw;
+  margin-right: 0;
 }
