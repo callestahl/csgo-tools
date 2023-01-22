@@ -2,7 +2,7 @@ import styles from './Input.module.css'
 
 import random from '../assets/random.svg'
 import remove from '../assets/xWhite.svg'
-import duplicate from '../assets/duplicate.svg'
+import duplicateIcon from '../assets/duplicate.svg'
 import { randomizeFloat } from '../api'
 
 
@@ -78,7 +78,7 @@ const Input = (props) => {
                         <img className={styles.buttonImage} src={random}></img>
                     </button>
                     <button onClick={duplicate} className={styles.duplicate}>
-                        <img className={styles.buttonImage} src={duplicate}></img>
+                        <img className={styles.buttonImage} src={duplicateIcon}></img>
                     </button>
                     <button onClick={() => {
                         props.removeInput(props.index)
