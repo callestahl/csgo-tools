@@ -15,6 +15,7 @@ import SearchResult from './components/SearchResult'
 import Input from './components/Input'
 import ProbabilityCollection from './components/ProbabilityCollection'
 import ProbabilitySkin from './components/ProbabilitySkin'
+import Alert from './components/Alert'
 import { isDisabled } from '@testing-library/user-event/dist/utils'
 
 function App() {
@@ -32,6 +33,31 @@ function App() {
   const [outcome, setOutcome] = useState(null)
   const [showInfo, setShowInfo] = useState(false)
   const [qualityIsDisabled, setQualityIsDisabled] = useState(false);
+  const [alert, setAlert] = useState({
+    "type": "message",
+    "isVisible": false,
+    "message": ""
+  })
+  const [alertTimeoutId, setAlertTimeoutId] = useState(null);
+  
+  const showAlert = (message, type) => {
+    if (alertTimeoutId !== null) {
+      clearTimeout(alertTimeoutId)
+    }
+
+    setAlert({
+      "type": type,
+      "isVisible": true,
+      "message": message
+    })
+
+    setAlertTimeoutId(setTimeout(() => {
+      setAlert({"isVisible": false})
+    }, 5000))
+    
+    
+
+  }
 
   const toggleInfo = () => {
     setShowInfo(!showInfo)
@@ -50,7 +76,14 @@ function App() {
   }
 
   const calculate = () => {
-    setOutcome(calculateOutcomes(currentInputs, currentInputsFloats))
+    const result = calculateOutcomes(currentInputs, currentInputsFloats)
+    //if calculation fails the function will return a string with error message
+    if (typeof result === "string") {
+      showAlert(result, 'Error')
+    }
+    else {
+      setOutcome(result)
+    }
   }
 
   const randomizeFloat = (index, floatMin, floatMax) => {
@@ -62,15 +95,11 @@ function App() {
   const randomizeInputs = (quality) => {
     const InputSAndFloats = getRandomSkins(currentInputs, currentInputsFloats, quality, searchResults)
     if (InputSAndFloats === null) {
-      showErrorMessage('No skins match your search filters. Change the add inputs filters and try again')
+      showAlert('No skins match your search filters. Change the add inputs filters and try again')
       return
     }
     setCurrentInputs(InputSAndFloats[0])
     setCurrentInputsFloats(InputSAndFloats[1])
-  }
-
-  const showErrorMessage = (message) => {
-
   }
 
   const clearFilters = () => {
@@ -79,6 +108,9 @@ function App() {
     //only reset quality if inputs is empty
     if (currentInputs[0] === null) {
       setCurrentQuality('')
+    }
+    else {
+      showAlert('Input filters cleared. To reset quality you first need to clear the inputs.', 'Message')
     }
   }
 
@@ -146,6 +178,10 @@ function App() {
       {
         showInfo &&
         <InfoPopUp toggleInfo={toggleInfo} />
+      }
+      {
+        alert.isVisible &&
+        <Alert type={alert.type} message={alert.message} />
       }
       <nav>
         <h3>

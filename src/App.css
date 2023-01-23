@@ -16,7 +16,13 @@
   --restricted-color: #8847ff;
   --classified-color: #d32ee6;
   --covert-color: #eb4b4b;
-  --error: #c21111;
+  --error: #E83535;
+  --error-light: #E48080;
+  --success: #46EB2B;
+  --success-light: #B5F3AA;
+  --warning: #F2D11E;
+  --warning-light: #F3E599;
+
 
   --breakpoint: 1120px;
 
@@ -26,6 +32,10 @@
   font-family: var(--main-font);
   font-weight: 300;
   color: var(--clear-button-outline-color);
+}
+
+body {
+  margin: 0;
 }
 
 input,
