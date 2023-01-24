@@ -150,6 +150,7 @@ function App() {
     currentInputFloatsState.push(null)
     setCurrentInputs(currentInputState)
     setCurrentInputsFloats(currentInputFloatsState)
+    setOutcome(null)
   }
 
   //Updates searchresults when when any of the search parameters change
