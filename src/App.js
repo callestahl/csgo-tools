@@ -54,9 +54,6 @@ function App() {
     setAlertTimeoutId(setTimeout(() => {
       setAlert({"isVisible": false})
     }, 5000))
-    
-    
-
   }
 
   const toggleInfo = () => {
