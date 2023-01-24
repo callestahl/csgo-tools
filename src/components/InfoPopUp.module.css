@@ -9,7 +9,7 @@
     left: calc(50% - (min(max(40vw, 310px), 1000px)/2));
     border-radius: 31px;
     border: 1px solid var(--accent-color);
-    overflow-y: scroll;
+    
   
   }
   
@@ -36,7 +36,10 @@
 
   }
 
-
+.text {
+  overflow-y: scroll;
+  height: calc(75vh - 62px);
+}
 
   button > img {
     width: 30px;
