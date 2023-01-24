@@ -14,7 +14,8 @@
 }
 
 .title {
-    margin-left: 10px;
+    margin: 20px 0 5px 10px;
+
 }
 
 .titleInvisible {
@@ -28,10 +29,12 @@
     border-radius: 10px;
     background-color: var(--small-card-color);
     width: 100%;
-    height: 90%;
+    height: 82px;
     overflow-x: hidden;
     object-fit: cover;
-
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 
 }
 

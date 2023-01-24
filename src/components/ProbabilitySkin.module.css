@@ -3,19 +3,18 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    height: 130px;
 }
 
 .card {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-overflow: hidden;
+    overflow: hidden;
     background-color: var(--small-card-color);
     width: 90%;
-    height: 80px;
+    height: 82px;
     border-radius: 10px;
-    /* max-width: 310px; */
-
 }
 
 .skin {
@@ -30,13 +29,9 @@ overflow: hidden;
     width: 45px;
 }
 
-.probability {
-    
-}
+.probability {}
 
-.wear {
-    
-}
+.wear {}
 
 .text {
     margin-top: 0px;
