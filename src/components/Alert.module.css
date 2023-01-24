@@ -1,0 +1,70 @@
+.container {
+    height: 40px;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 20px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    height: 100%;
+    border: 2px solid var(--big-card-color);
+    border-radius: 6px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--searchfield-color);
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    height: 100%;
+    border: 2px solid var(--error);
+    border-radius: 6px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--error-light);
+}
+
+.success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    height: 100%;
+    border: 2px solid var(--success);
+    border-radius: 6px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--success-light);
+}
+
+.warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 600px;
+    height: 100%;
+    border: 2px solid var(--warning);
+    border-radius: 6px;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--warning-light);
+}
