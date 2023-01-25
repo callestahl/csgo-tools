@@ -25,7 +25,7 @@ const Input = (props) => {
 
 
     const checkFloat = (floatMin, floatMax, currentFloat) => {
-        if (currentFloat > Number(floatMax) || currentFloat < Number(floatMin)) {
+        if (currentFloat > Number(floatMax) || currentFloat < Number(floatMin) || currentFloat === null) {
             return false
         }
         return true

@@ -113,11 +113,15 @@ function App() {
 
   //returns the index of the inserted skin or -1 if not inserted
   const addInput = (skin) => {
-    let currentState = [...currentInputs]
-    for (let i = 0; i < currentState.length; i++) {
-      if (currentState[i] === null) {
-        currentState[i] = skin
-        setCurrentInputs(currentState)
+    let newInputsState = [...currentInputs]
+    let newInputsFloatsState = [...currentInputsFloats]
+    for (let i = 0; i < newInputsState.length; i++) {
+      if (newInputsState[i] === null) {
+        newInputsState[i] = skin
+        setCurrentInputs(newInputsState)
+        //set initial wear value to lowest possible
+        newInputsFloatsState[i] = Number(skin.floatMin)
+        setCurrentInputsFloats(newInputsFloatsState)
         return i
       }
     }
