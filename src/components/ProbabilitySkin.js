@@ -22,7 +22,7 @@ const ProbabilitySkin = (props) => {
             </h6>
             <div className={styles.card}>
                 <img className={styles.skin} src={props.skin.imageURL}></img>
-                <img className={styles.collection} src={props.skin.collectionURL}></img>
+                <img className={styles.collection} title={props.skin.collection} src={props.skin.collectionURL}></img>
                 <div className={styles.probability}>
                     <h6 className={styles.text}>
                         probability:

@@ -65,12 +65,6 @@ export const calculateOutcomes = (inputs, inputFloats) => {
     if (inputFloats.includes(null)) {
         return 'Some inputs are missing a wear value'
     }
-    // inputs.forEach((skin, index) => {
-    //     console.log()
-    //     if ((Number(skin.floatMin) > inputFloats[index]) || (Number(skin.floatMax) < inputFloats[index])) {
-    //         return 'One or more of the input skins have wear values outside of their range'
-    //     }
-    // })
 
     const isOutOfRange = inputs.some((skin, index) => {
         return (Number(skin.floatMin) > inputFloats[index]) || (Number(skin.floatMax) < inputFloats[index]);
@@ -195,7 +189,6 @@ export const getRandomSkins = (currentInputs, currentInputFloats, inputQuality =
 
     newInputFloatsState.forEach((float, index) => {
         if (float === null || Number(float) < Number(newInputsState[index].floatMin) || Number(float) > Number(newInputsState[index].floatMax)) {
-            // console.log(newInputsState)
             newInputFloatsState.splice(index, 1, (Math.random() * (Number(newInputsState[index].floatMax) - Number(newInputsState[index].floatMin)) + Number(newInputsState[index].floatMin)).toFixed(5))
         }
     })
@@ -204,8 +197,6 @@ export const getRandomSkins = (currentInputs, currentInputFloats, inputQuality =
 }
 
 const getRandomSkin = (quality, searchResults) => {
-    console.log(quality)
-    console.log(searchResults)
     const allSkinsFiltered = searchResults.filter(skin => skin.quality === quality)
     const res = allSkinsFiltered[Math.floor(Math.random() * (allSkinsFiltered.length))]
     return (allSkinsFiltered[Math.floor(Math.random() * (allSkinsFiltered.length))])
