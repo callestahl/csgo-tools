@@ -15,10 +15,27 @@ import styles from './ProbabilitySkin.module.css'
  * @returns {JSX.Element}
  */
 const ProbabilitySkin = (props) => {
+    let floatGroup
+    if (props.wear >= 0.44) {
+        floatGroup = 'Battle Scarred'
+    }
+    else if (props.wear >= 0.37) {
+        floatGroup = 'Well Worn'
+    }
+    else if (props.wear >= 0.15) {
+        floatGroup = 'Field Tested'
+    }
+    else if (props.wear >= 0.07) {
+        floatGroup ='Minimal Wear'
+    }
+    else {
+        floatGroup = 'Factory New'
+    }
+
     return (
         <div className={styles.parent}>
             <h6 className={styles.title}>
-                {props.skin.weaponName + ' | ' + props.skin.skinName}
+                {props.skin.weaponName + ' | ' + props.skin.skinName + ' (' + floatGroup + ')'}
             </h6>
             <div className={styles.card}>
                 <img className={styles.skin} src={props.skin.imageURL}></img>
