@@ -277,7 +277,7 @@ function App() {
           </div>
         </div>
       </main>
-      <footer>Copyright © 2023 Carl Ståhl. Not affiliated with Steam or Valve Corp.</footer>
+      <footer>Copyright © 2023 Carl Ståhl.<br/>Not affiliated with Steam or Valve Corp.</footer>
       <div className='info-button-container'>
         <button id='info-button' onClick={toggleInfo}>
           <img src={info}>
