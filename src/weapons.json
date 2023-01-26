@@ -11485,7 +11485,51 @@
             {
                 "collection": "2021 Train",
                 "weaponName": "Glock-18",
-                "skinName": "Gamma Doppler",
+                "skinName": "Gamma Doppler (Emerald)",
+                "quality": "Covert",
+                "tradupInput": false,
+                "floatMin": "0.00",
+                "floatMax": "0.50",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_am_emerald_marbleized_glock_light_large.6a12f489f6fc3423f409d7fa043d5fdcb7b9ea22.png",
+                "collectionURL": "/collections/2021_train.webp"
+            },
+            {
+                "collection": "2021 Train",
+                "weaponName": "Glock-18",
+                "skinName": "Gamma Doppler (Phase 1)",
+                "quality": "Covert",
+                "tradupInput": false,
+                "floatMin": "0.00",
+                "floatMax": "0.50",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_am_gamma_doppler_phase1_glock_light_large.b39515a32e0fbdcccc8e90f9d653d434d176df9d.png",
+                "collectionURL": "/collections/2021_train.webp"
+            },
+            {
+                "collection": "2021 Train",
+                "weaponName": "Glock-18",
+                "skinName": "Gamma Doppler (Phase 2)",
+                "quality": "Covert",
+                "tradupInput": false,
+                "floatMin": "0.00",
+                "floatMax": "0.50",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_am_gamma_doppler_phase2_glock_light_large.4a2e4e09743696db5eb742682725eafd9fbfe9cf.png",
+                "collectionURL": "/collections/2021_train.webp"
+            },
+            {
+                "collection": "2021 Train",
+                "weaponName": "Glock-18",
+                "skinName": "Gamma Doppler (Phase 3)",
+                "quality": "Covert",
+                "tradupInput": false,
+                "floatMin": "0.00",
+                "floatMax": "0.50",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_am_gamma_doppler_phase3_glock_light_large.c8f9a4a652ce47d4def8e729f02d47a61133d1e9.png",
+                "collectionURL": "/collections/2021_train.webp"
+            },
+            {
+                "collection": "2021 Train",
+                "weaponName": "Glock-18",
+                "skinName": "Gamma Doppler (Phase 4)",
                 "quality": "Covert",
                 "tradupInput": false,
                 "floatMin": "0.00",

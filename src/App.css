@@ -103,6 +103,7 @@ nav {
 main {
   display: flex;
   justify-content: center;
+
 }
 
 button {
@@ -117,10 +118,20 @@ button:active {
   scale: 90%;
 }
 
+footer {
+  width: 60%;
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+  top: 20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  height: 100vh;
 }
 
 .big-card-container {
@@ -133,7 +144,7 @@ button:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:start;
+  justify-content: start;
   background-color: var(--big-card-color);
   height: 100%;
   border-radius: 25px;
@@ -159,8 +170,8 @@ button:active {
   justify-content: center;
   align-items: center;
   position: fixed;
-  right: 20px;
-  bottom: 20px;
+  right: 10px;
+  bottom: 10px;
   width: 42px;
   height: 42px;
   border-radius: 30px;
@@ -191,6 +202,13 @@ button:active {
 }
 
 @media (max-width: 1120px) {
+
+  footer {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    top: 0;
+  }
+
   main {
     flex-direction: column;
     align-items: center;
@@ -198,13 +216,17 @@ button:active {
   }
 
   #info-button {
-    position: initial;
+    position: relative;
+    top: -10px;
+    left: 0px;
   }
 
   .info-button-container {
     display: flex;
     justify-content: end;
-    margin: 0 0 10px 0;
+    margin: 0 10px 0 0;
+    bottom: 60px;
+    position: relative;
   }
 }
 
@@ -253,10 +275,11 @@ button:active {
 /* disable arrows in number inputs */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
-input[type=number]{
+
+input[type=number] {
   -moz-appearance: textfield;
 }
 
@@ -271,10 +294,10 @@ input[type=number]{
 }
 
 .skins {
- display: flex;
- flex-direction: column;
- width: 100%;
- margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .clear-input-filters-button {
