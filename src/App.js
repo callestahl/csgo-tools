@@ -125,6 +125,7 @@ function App() {
         return i
       }
     }
+    showAlert('Inputs already filled')
     return -1
   }
 
@@ -160,8 +161,7 @@ function App() {
   //Updates searchresults when when any of the search parameters change
   useEffect(() => {
     setSearchResults(getSearchResults(currentSearchWord, currentCollection, currentQuality))
-
-  }, [currentSearchWord, currentCollection, currentQuality]);
+  }, [currentSearchWord, currentCollection, currentQuality])
 
   //disables the quality select element if current inputs contains something else than null
   useEffect(() => {
@@ -221,7 +221,7 @@ function App() {
           <div className='big-card'>
             {
               searchResults.map((skin) => (
-                <SearchResult addInput={addInput} skin={skin} />
+                <SearchResult key={skin.weaponName + skin.skinName} addInput={addInput} skin={skin} />
               ))
             }
           </div>
@@ -234,7 +234,7 @@ function App() {
             <div className='inputs'>
               {
                 currentInputs.map((skin, index) =>
-                  <Input randomizeFloat={randomizeFloat} floats={currentInputsFloats} setFloat={setFloat} addInput={addInput} removeInput={removeInput} index={index} skin={skin} />
+                  <Input key={skin ? skin.weaponName+skin.skinName+index : index} randomizeFloat={randomizeFloat} floats={currentInputsFloats} setFloat={setFloat} addInput={addInput} removeInput={removeInput} index={index} skin={skin} />
                 )
               }
             </div>
@@ -260,7 +260,7 @@ function App() {
                 <div className='collections'>
                   {
                     outcome.collections.map((collection, index) =>
-                      <ProbabilityCollection collection={collection} probability={outcome.collectionsProbabiliy[index]} collectionURL={outcome.collectionsURL[index]} />
+                      <ProbabilityCollection key={collection} collection={collection} probability={outcome.collectionsProbabiliy[index]} collectionURL={outcome.collectionsURL[index]} />
                     )
                   }
                 </div>
@@ -268,7 +268,7 @@ function App() {
                 <div className='skins'>
                   {
                     outcome.skins.map((skin, index) =>
-                      <ProbabilitySkin skin={skin} probability={outcome.skinsProbability[index]} wear={outcome.skinsFloat[index]} />
+                      <ProbabilitySkin key={skin.weaponName + skin.skinName} skin={skin} probability={outcome.skinsProbability[index]} wear={outcome.skinsFloat[index]} />
                     )
 
                   }

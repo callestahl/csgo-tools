@@ -76,7 +76,7 @@
     width: 70px;
     margin-right: 5px;
     font-size: 11px;
-    outline: 2px solid var(--error); 
+    outline: 2px solid var(--error);
 }
 
 .cardBorder>button {
@@ -85,7 +85,17 @@
     border-radius: 0%;
     margin: auto 0;
     border-radius: 5px;
+    transition: none;
 }
+
+.cardBorder>button:hover {
+    scale: 100%;
+}
+
+.cardBorder>button:active {
+    scale: 100%;
+}
+
 
 .randomize {
     border: 1px solid var(--accent-color);
@@ -94,10 +104,11 @@
     justify-content: center;
     align-items: center;
 }
-.randomize > img {
-   padding-bottom: 0.1px;
-   padding-top: 1px;
-   padding-left: 1px;
+
+.randomize>img {
+    padding-bottom: 0.1px;
+    padding-top: 1px;
+    padding-left: 1px;
 }
 
 
@@ -105,10 +116,10 @@
     background-color: var(--searchfield-color);
 }
 
-.duplicate > img {
+.duplicate>img {
     padding-top: 1px;
     padding-left: 1px;
- }
+}
 
 .remove {
     border: 1px solid var(--clear-button-outline-color);
@@ -116,11 +127,14 @@
 }
 
 .remove > img {
-    padding-bottom: 1px;
-    padding-left: 1px;
+    padding-bottom: 1px; 
+    padding-left: 0.1px;
+    padding-right: 0px; 
+}
+   
 
- }
+
 
 .buttonImage {
-    scale: 50%;
+    scale: 45%;
 }
