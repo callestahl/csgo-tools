@@ -103,6 +103,8 @@ nav {
 main {
   display: flex;
   justify-content: center;
+  position: relative;
+  top: -30px;
 
 }
 
@@ -121,10 +123,10 @@ button:active {
 footer {
   width: 60%;
   text-align: center;
-  margin: 3vh auto;
+  margin: 0 auto;
   position: relative;
   top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-size: 10px;
 }
 
@@ -132,6 +134,7 @@ footer {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  justify-content: space-between;
 }
 
 .big-card-container {

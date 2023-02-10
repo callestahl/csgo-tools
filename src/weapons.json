@@ -12326,6 +12326,196 @@
                 "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_chroma_pink_light_large.afc69cbf51b04e24149744b6ee1d998cc18d3002.png",
                 "collectionURL": "/collections/recoil.webp"
             }
+        ],
+        "Revolution": [
+            {
+                "collection": "Revolution",
+                "weaponName": "Tec-9",
+                "skinName": "Rebel",
+                "quality": "Mil-Spec",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "1.00",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_freedom_light_large.bb79585222a88d4dd3b154915c5527cac7e507d1.png",
+                "collectionURL": "/collections/revolution.webp"
+            },
+            {
+                "collection": "Revolution",
+                "weaponName": "P250",
+                "skinName": "Re.built",
+                "quality": "Mil-Spec",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "0.90",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_cu_p250_rebuilt_light_large.69d4fcb9a8151d09818d1c26cf4c7b03d046b5a1.png",
+                "collectionURL": "/collections/revolution.webp"
+            },
+            {
+                "collection": "Revolution",
+                "weaponName": "MP9",
+                "skinName": "Featherweight",
+                "quality": "Mil-Spec",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "1.00",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp9_cu_mp9_superlight_light_large.81ad837f4c889f250fa03b227ef74555614de55d.png",
+                "collectionURL": "/collections/revolution.webp"
+            },
+            {
+                "collection": "Revolution",
+                "weaponName": "MAG-7",
+                "skinName": "Insomnia",
+                "quality": "Mil-Spec",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "1.00",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_cu_mag7_insomnia_light_large.0d971fb17ca0bb1df7baed6a1caa902c56c1ea5b.png",
+                "collectionURL": "/collections/revolution.webp"
+            },
+            {
+                "collection": "Revolution",
+                "weaponName": "SG 553",
+                "skinName": "Cyberforce",
+                "quality": "Mil-Spec",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "0.90",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_sg556_cu_sg553_cyberforce_light_large.63aa4e611195d801eb706ac65d38df68f98e2b76.png",
+                "collectionURL": "/collections/revolution.webp"
+            },
+            {
+                "collection": "Revolution",
+                "weaponName": "SCAR-20",
+                "skinName": "Fragments",
+                "quality": "Mil-Spec",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "0.78",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_scar20_gs_scar_fragments_black_light_large.d6bde287b06ba2380ba07621a0b06c36b13c4025.png",
+                "collectionURL": "/collections/revolution.webp"
+            },
+            {
+                "collection": "Revolution",
+                "weaponName": "MP5-SD",
+                "skinName": "Liquidation",
+                "quality": "Mil-Spec",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "1.00",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp5sd_cu_mp5sd_quick_liquidation_light_large.2b446c710928debe38469e33b3b9030bd218c0e3.png",
+                "collectionURL": "/collections/revolution.webp"
+            },
+            {
+                "collection": "Revolution",
+                "weaponName": "MAC-10",
+                "skinName": "Sakkaku",
+                "quality": "Restricted",
+                "tradupInput": true,
+                "floatMin": "0.21",
+                "floatMax": "0.79",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_sakkaku_light_large.b590689d0ca099e8a759dd0a86da0710a58bca42.png",
+                "collectionURL": "/collections/revolution.webp"
+            },
+            {
+                "collection": "Revolution",
+                "weaponName": "R8 Revolver",
+                "skinName": "Banana Cannon",
+                "quality": "Restricted",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "1.00",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_r8_banana_light_large.50f0b729a36a405d48b41d58463234dbbd15b9cf.png",
+                "collectionURL": "/collections/revolution.webp"
+            },
+            {
+                "collection": "Revolution",
+                "weaponName": "P90",
+                "skinName": "Neoqueen",
+                "quality": "Restricted",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "0.60",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_gs_p90_neoqueen_light_large.fa2a81f8c7906b2683b5eb4b562edd2529ad2cf0.png",
+                "collectionURL": "/collections/revolution.webp"
+            },
+            {
+                "collection": "Revolution",
+                "weaponName": "Glock-18",
+                "skinName": "Umbral Rabbit",
+                "quality": "Restricted",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "0.75",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_moon_rabbit_light_large.9063b9745250446c657632eb13a6325f51d101f2.png",
+                "collectionURL": "/collections/revolution.webp"
+            },
+            {
+                "collection": "Revolution",
+                "weaponName": "M4A1-S",
+                "skinName": "Emphorosaur-S",
+                "quality": "Restricted",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "0.80",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_cu_m4a1s_feeding_frenzy_light_large.e1cb803e0e10ae4457e42d34ec8515b1500f4762.png",
+                "collectionURL": "/collections/revolution.webp"
+            },
+            {
+                "collection": "Revolution",
+                "weaponName": "UMP-45",
+                "skinName": "Wild Child",
+                "quality": "Classified",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "1.00",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ump45_cu_ump_clutch_kick_light_large.b57e43c07b433517b1c3bdaa1e52ce44878af481.png",
+                "collectionURL": "/collections/revolution.webp"
+            },
+            {
+                "collection": "Revolution",
+                "weaponName": "P2000",
+                "skinName": "Wicked Sick",
+                "quality": "Classified",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "1.00",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_hkp2000_cu_p2000_decline_light_large.7f57145674a5e41b3b8e7fe70be4ffbb57ec6f84.png",
+                "collectionURL": "/collections/revolution.webp"
+            },
+            {
+                "collection": "Revolution",
+                "weaponName": "AWP",
+                "skinName": "Doodle Lore",
+                "quality": "Classified",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "0.80",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_doodle_lore_light_large.ee6d96299089503712d6398ffc2b04081d357b1c.png",
+                "collectionURL": "/collections/revolution.webp"
+            },
+            {
+                "collection": "Revolution",
+                "weaponName": "M4A4",
+                "skinName": "Temukau",
+                "quality": "Covert",
+                "tradupInput": false,
+                "floatMin": "0.00",
+                "floatMax": "0.80",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_cu_m4a4_temukau_light_large.a41eb80c70cbbee5d84e53b5cd1eaa10954c938d.png",
+                "collectionURL": "/collections/revolution.webp"
+            },
+            {
+                "collection": "Revolution",
+                "weaponName": "AK-47",
+                "skinName": "Head Shot",
+                "quality": "Covert",
+                "tradupInput": false,
+                "floatMin": "0.00",
+                "floatMax": "1.00",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak_head_shot_holo_light_large.85be84ba7c07917493b8e8a66c9d95c928ebe8b6.png",
+                "collectionURL": "/collections/revolution.webp"
+            }
         ]
+
     }
 ]
