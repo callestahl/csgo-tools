@@ -16,7 +16,6 @@ import Input from './components/Input'
 import ProbabilityCollection from './components/ProbabilityCollection'
 import ProbabilitySkin from './components/ProbabilitySkin'
 import Alert from './components/Alert'
-import { isDisabled } from '@testing-library/user-event/dist/utils'
 
 function App() {
 

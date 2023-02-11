@@ -84,18 +84,27 @@ export const calculateOutcomes = (inputs, inputFloats) => {
 
     //find all possible skin outcomes
     const quality = ['Consumer', 'Industrial', 'Mil-Spec', 'Restricted', 'Classified', 'Covert']
+    let unsortedSkins = []
     const outputQuality = quality[quality.indexOf(inputs[0].quality) + 1]
     for (const collection in weapons[0]) {
         if (collections.includes(collection)) {
             weapons[0][collection].forEach(skin => {
                 if (skin.quality === outputQuality) {
-                    skins.push(skin)
+                    unsortedSkins.push(skin)
                 }
             })
 
         }
-
     }
+    //sort skins to match probability
+    collections.forEach(collection => {
+        unsortedSkins.forEach(skin => {
+            if (collection === skin.collection) {
+                skins.push(skin)
+            }
+        })
+    })
+    
 
     //calculate avg float of inputs
     let totalFloat = 0
