@@ -12485,12 +12485,12 @@
             {
                 "collection": "Revolution",
                 "weaponName": "AWP",
-                "skinName": "Doodle Lore",
+                "skinName": "Duality",
                 "quality": "Classified",
                 "tradupInput": true,
                 "floatMin": "0.00",
-                "floatMax": "0.80",
-                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_cu_awp_doodle_lore_light_large.ee6d96299089503712d6398ffc2b04081d357b1c.png",
+                "floatMax": "0.70",
+                "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_gs_awp_limbo_snake_light_large.60984ce1e5c1a4ac10e83444a9b7e7f78dd98b1e.png",
                 "collectionURL": "/collections/revolution.webp"
             },
             {
