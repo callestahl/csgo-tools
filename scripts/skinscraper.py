@@ -13,20 +13,21 @@ try:
     driver.find_element(By.XPATH, '/html/body/div[1]/div/div/div/div/div[2]/div[2]/button[2]').click()
     f = open("weapons.json", "a")
 
-    for i in range(1, 2000):
+    #edit range
+    for i in range(1553, 1571):
         driver.get('https://csgostash.com/skin/' + str(i))
         sleep(5)
         try:
-            skinName = driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[2]/div/div[1]/div[1]/h2/a[2]').text
+            skinName = driver.find_element(By.XPATH, '/html/body/div[3]/div[3]/div[2]/div/div[1]/div[1]/h2/a[2]').text
 
-            weaponName = driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[2]/div/div[1]/div[1]/h2/a[1]').text
+            weaponName = driver.find_element(By.XPATH, '/html/body/div[3]/div[3]/div[2]/div/div[1]/div[1]/h2/a[1]').text
             if weaponName not in weapons:
                 print('skip knife')
                 continue
                 
             
             #collection, måste slicas olika beroende på case eller collection
-            collection = driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[2]/div/div[1]/div[2]/div/a/p').text
+            collection = driver.find_element(By.XPATH, '/html/body/div[3]/div[3]/div[2]/div/div[1]/div[2]/div[2]/a/p').text
             collectionSplit = collection.split(' ')
             if collectionSplit[len(collectionSplit) - 1] == 'Collection':
                 collectionSplit.pop(0)
@@ -42,13 +43,13 @@ try:
                 collection += string + ' '
             collection = collection[:-1]
 
-            grade = driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[2]/div/div[1]/div[1]/a[1]/div/p').text.split(' ')[0]
+            grade = driver.find_element(By.XPATH, '/html/body/div[3]/div[3]/div[2]/div/div[1]/div[1]/a[1]/div/p').text.split(' ')[0]
 
-            minFloat = driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[2]/div/div[2]/div[3]/div/div/div[1]/div[1]/div[1]/div').text
+            minFloat = driver.find_element(By.XPATH, '/html/body/div[3]/div[3]/div[2]/div/div[2]/div[3]/div/div/div[1]/div[1]/div[1]/div').text
                     
-            maxFloat = driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[2]/div/div[2]/div[3]/div/div/div[1]/div[2]/div[1]/div').text
+            maxFloat = driver.find_element(By.XPATH, '/html/body/div[3]/div[3]/div[2]/div/div[2]/div[3]/div/div/div[1]/div[2]/div[1]/div').text
                     
-            imageURL = driver.find_element(By.XPATH, '/html/body/div[3]/div[2]/div[2]/div/div[1]/div[1]/a[2]/img').get_attribute("src")
+            imageURL = driver.find_element(By.XPATH, '/html/body/div[3]/div[3]/div[2]/div/div[1]/div[1]/a[2]/img').get_attribute("src")
             
             #collection path
             collectionURL = '/collections/'
@@ -76,11 +77,12 @@ try:
                 "imageURL": imageURL,
                 "collectionURL": collectionURL
             }
+            print(result)
             f.writelines(str(result))
             f.write(',')
             
 
         except Exception as e:
-            pass
+            print(e)
 except:
     f.close()           

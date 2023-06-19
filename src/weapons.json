@@ -12515,7 +12515,218 @@
                 "imageURL": "https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_cu_ak_head_shot_holo_light_large.85be84ba7c07917493b8e8a66c9d95c928ebe8b6.png",
                 "collectionURL": "/collections/revolution.webp"
             }
-        ]
+        ],
+        "Anubis": [
+            {
+               "collection":"Anubis",
+               "weaponName":"M249",
+               "skinName":"Submerged",
+               "quality":"Consumer",
+               "tradupInput":true,
+               "floatMin":"0.02",
+               "floatMax":"0.80",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m249_cu_m249_scarab_light_large.6dc1dc25afc1a3a22fff064c85c8f2d3d88aeac7.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+                "collection":"Anubis",
+                "weaponName":"R8 Revolver",
+                "skinName":"Inlay",
+                "quality":"Consumer",
+                "tradupInput":true,
+                "floatMin":"0.00",
+                "floatMax":"0.76",
+                "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_revolver_gs_revolver_acanthus_bronze_light_large.3d652732f4082f2af2acce48c2343d2fd73bdcae.png",
+                "collectionURL":"/collections/anubis.webp"
+             },
+            {
+               "collection":"Anubis",
+               "weaponName":"XM1014",
+               "skinName":"Hieroglyph",
+               "quality":"Consumer",
+               "tradupInput":true,
+               "floatMin":"0.00",
+               "floatMax":"1.00",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_xm1014_cu_xm1014_pharaoh_light_large.dd51bfb65f740dd4145fb548ef9be0a353f82766.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+               "collection":"Anubis",
+               "weaponName":"MP7",
+               "skinName":"Sunbaked",
+               "quality":"Consumer",
+               "tradupInput":true,
+               "floatMin":"0.00",
+               "floatMax":"1.00",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mp7_gs_mp7_strone_light_large.38c65124a7edf35fa2223c37e97c5ac803c24207.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+               "collection":"Anubis",
+               "weaponName":"AUG",
+               "skinName":"Snake Pit",
+               "quality":"Consumer",
+               "tradupInput":true,
+               "floatMin":"0.00",
+               "floatMax":"0.55",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_aug_hy_dune_trap_light_large.61e49e32c50c4a984fec89ec01defd789ae42376.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+               "collection":"Anubis",
+               "weaponName":"M4A1-S",
+               "skinName":"Mud-Spec",
+               "quality":"Industrial",
+               "tradupInput":true,
+               "floatMin":"0.00",
+               "floatMax":"0.73",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_silencer_gs_m4a1s_milspec_light_large.abf3dbeb994944b3182cc60c50d3a729f47c1979.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+               "collection":"Anubis",
+               "weaponName":"SSG 08",
+               "skinName":"Azure Glyph",
+               "quality":"Industrial",
+               "tradupInput":true,
+               "floatMin":"0.01",
+               "floatMax":"0.99",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ssg08_gs_ssg08_anubis_light_large.6e654fe6456fb019d4507f750d113f67ca0a879f.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+               "collection":"Anubis",
+               "weaponName":"MAC-10",
+               "skinName":"Echoing Sands",
+               "quality":"Industrial",
+               "tradupInput":true,
+               "floatMin":"0.02",
+               "floatMax":"0.80",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mac10_cu_mac10_scarab_light_large.3dce90df4da34a30c0437a51e90fc77d08bbe2f3.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+               "collection":"Anubis",
+               "weaponName":"USP-S",
+               "skinName":"Desert Tactical",
+               "quality":"Industrial",
+               "tradupInput":true,
+               "floatMin":"0.00",
+               "floatMax":"1.00",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_usp_silencer_gs_usps_tactical_camo_light_large.ff54560941a8f50919ea6be8126490aff54ae810.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+               "collection":"Anubis",
+               "weaponName":"AK-47",
+               "skinName":"Steel Delta",
+               "quality":"Mil-Spec",
+               "tradupInput":true,
+               "floatMin":"0.00",
+               "floatMax":"0.73",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_ak47_gs_ak47_strone_light_large.8434d6be7fa076ce41c86eb5ea00efe9383800c6.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+               "collection":"Anubis",
+               "weaponName":"AWP",
+               "skinName":"Black Nile",
+               "quality":"Mil-Spec",
+               "tradupInput":true,
+               "floatMin":"0.00",
+               "floatMax":"0.75",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_awp_gs_awp_strone_light_large.f6a8a693f8bcdd89436549db6079bb5f102c9616.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+               "collection":"Anubis",
+               "weaponName":"Tec-9",
+               "skinName":"Mummy's Rot",
+               "quality":"Mil-Spec",
+               "tradupInput":true,
+               "floatMin":"0.00",
+               "floatMax":"1.00",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_tec9_cu_tec9_mummy_light_large.b70be5ec031a0538fe3e7b42d0a21d1cebe869e1.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+               "collection":"Anubis",
+               "weaponName":"MAG-7",
+               "skinName":"Copper Coated",
+               "quality":"Mil-Spec",
+               "tradupInput":true,
+               "floatMin":"0.00",
+               "floatMax":"1.00",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_mag7_gs_mag7_goold_light_large.293c06a3f62ce9dfb177f79462fbb7b31bd5eb9f.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+               "collection":"Anubis",
+               "weaponName":"Glock-18",
+               "skinName":"Ramese's Reach",
+               "quality":"Restricted",
+               "tradupInput":true,
+               "floatMin":"0.00",
+               "floatMax":"1.00",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_glock_cu_glock_ramzes_light_large.86da273a88db7c8d0231e03a45cd94929efeb1ff.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+               "collection":"Anubis",
+               "weaponName":"Nova",
+               "skinName":"Sobek's Bite",
+               "quality":"Restricted",
+               "tradupInput":true,
+               "floatMin":"0.00",
+               "floatMax":"1.00",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_nova_gs_nova_sobek_light_large.53046ae2482691e0c1ba90de50698f875294a737.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+               "collection":"Anubis",
+               "weaponName":"P90",
+               "skinName":"ScaraB Rush",
+               "quality":"Restricted",
+               "tradupInput":true,
+               "floatMin":"0.00",
+               "floatMax":"1.00",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p90_cu_p90_scarab_of_wisdom_light_large.54f85e60f71185083323768b79e699da762e09e6.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+               "collection":"Anubis",
+               "weaponName":"FAMAS",
+               "skinName":"Waters of Nephthys",
+               "quality":"Classified",
+               "tradupInput":true,
+               "floatMin":"0.00",
+               "floatMax":"0.70",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_famas_cu_famas_holo_ocean_light_large.e9efee74629f50aab0110ae3fc6a07aabac679e0.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+               "collection":"Anubis",
+               "weaponName":"P250",
+               "skinName":"Apep's Curse",
+               "quality":"Classified",
+               "tradupInput":true,
+               "floatMin":"0.00",
+               "floatMax":"1.00",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_p250_gs_p250_apep_light_large.39613b6ade6f204aaaed995e47d0a9fa42963b45.png",
+               "collectionURL":"/collections/anubis.webp"
+            },
+            {
+               "collection":"Anubis",
+               "weaponName":"M4A4",
+               "skinName":"Eye of Horus",
+               "quality":"Covert",
+               "tradupInput":false,
+               "floatMin":"0.00",
+               "floatMax":"0.70",
+               "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_gs_m4a4_ra_light_large.7531ec73ee20dac93f068342616599e4808fb850.png",
+               "collectionURL":"/collections/anubis.webp"
+            }
+         ]
 
     }
 ]
