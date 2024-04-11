@@ -14,7 +14,7 @@ try:
     f = open("weapons.json", "a")
 
     #edit range
-    for i in range(1553, 1571):
+    for i in range(1574, 1600):
         driver.get('https://csgostash.com/skin/' + str(i))
         sleep(5)
         try:

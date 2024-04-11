@@ -12726,7 +12726,196 @@
                "imageURL":"https://steamcdn-a.akamaihd.net/apps/730/icons/econ/default_generated/weapon_m4a1_gs_m4a4_ra_light_large.7531ec73ee20dac93f068342616599e4808fb850.png",
                "collectionURL":"/collections/anubis.webp"
             }
-         ]
+         ],
+         "Kilowatt": [
+            {
+                "collection": "Kilowatt",
+                "weaponName": "Dual Berettas",
+                "skinName": "Hideout",
+                "quality": "Mil-Spec",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "0.70",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpos7asPwJf1-bJfQJA6c6zgJSKhMj4Nq_Zl2du79d4hNbN_Iv9nBrg-kBlNTqnLNKTIQdqNA6D8gDrxebvjcW66pnOyiNl7ikh4HvfmETln1gSOUP_d83o/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            },
+            {
+                "collection": "Kilowatt",
+                "weaponName": "Nova",
+                "skinName": "Dark Sigil",
+                "quality": "Mil-Spec",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "0.70",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpouLWzKjhu3OXJTjlQ7de9lZK0m_7zO6-fzj8C7sYhiLiR94702QDn_UJrNmv2dYLDcFU8ZVrX_1frlennjcC97oOJlyX_Py1n0g/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            },
+            {
+                "collection": "Kilowatt",
+                "weaponName": "UMP-45",
+                "skinName": "Motorized",
+                "quality": "Mil-Spec",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "0.80",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo7e1f1Jfxv7YJWh97c-lkY2Jm_LwDL7fkWJf7fp9g-7J4cKn0Qaxr0c6YmumI4GVdlBtN1rZr1G8k-zm1sW-6J3PzXUyvScm5SyPgVXp1qY5rykn/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            },
+            {
+                "collection": "Kilowatt",
+                "weaponName": "Tec-9",
+                "skinName": "Slag",
+                "quality": "Mil-Spec",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "0.90",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoor-mcjh01vCRTjdX4tevlZKPqPL6NLLfk25D4ct2teXI8oThxg3sqUppZzrxJ4SVewRoMFHU8gW4ku69gZDo75mcz3oysnNztHjbnBCpwUYb_AiXdm0/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            },
+            {
+                "collection": "Kilowatt",
+                "weaponName": "XM1014",
+                "skinName": "Irezumi",
+                "quality": "Mil-Spec",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "0.80",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgporrf0e1Y07OvFIG0TuOO_hoWRgvr9DLfYkWNFpsMk2LjH8dis2Abg8xA4YDr7ctWVdAM5ZFHY-1K8xrzn1sTv6szPyCN9-n51nuU3Vic/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            },
+            {
+                "collection": "Kilowatt",
+                "weaponName": "SSG 08",
+                "skinName": "Dezastre",
+                "quality": "Mil-Spec",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "1.00",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopamie19fwODPIWV96NmslZOfhfLLP7LWnn8f6pAm2-yV9NWt2AG3rkc-YjzzcoOUIwE2aA7Q_VG_lenrgMe-6smYmGwj5HfHgtJwGw/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            },
+            {
+                "collection": "Kilowatt",
+                "weaponName": "MAC-10",
+                "skinName": "Light Box",
+                "quality": "Mil-Spec",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "1.00",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou7umeldf3vLLIG195dC6gZOCmPnLP7LWnn8f7cR3ibuXp9WkiQO3_kM_Nm-hJYXDcQ9tMgrYqFTvk-vo0cDq6pqcm2wj5HfOKwrF1Q/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            },
+            {
+                "collection": "Kilowatt",
+                "weaponName": "Sawed-Off",
+                "skinName": "Analog Input",
+                "quality": "Restricted",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "0.62",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpopbuyLgNv1fX3YjxV6di5koa0kPb5NqnummJW4NE_2u-Yrd6i2AG3_BJtMmv0IoWSIFc4ZgqG_VbvlOe90cO8tZycnyA3uj5iuyhcVi1dpA/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            },
+            {
+                "collection": "Kilowatt",
+                "weaponName": "MP7",
+                "skinName": "Just Smile",
+                "quality": "Restricted",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "1.00",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou6ryFApwhMzCZC5W08-7nYyOqPv9NLPF2DkCv50ij7nD84j03QeyrURqam3yLISVegI3Mw2Bq1S9wr_q08Dq6cvXiSw0jpWIZ4I/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            },
+            {
+                "collection": "Kilowatt",
+                "weaponName": "Five-SeveN",
+                "skinName": "Hybrid",
+                "quality": "Restricted",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "1.00",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposLOzLhRlxfbGTjtL-tmlkZaOmcj8KrnDn29u5Mx2gv2P8Y-k2VDj8kRlMWmnJdOQegVtYlvWqQW-kr261sS86czOzHc2viAh52GdwUK44ejvSA/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            },
+            {
+                "collection": "Kilowatt",
+                "weaponName": "M4A4",
+                "skinName": "Etch Lord",
+                "quality": "Restricted",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "1.00",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhth_KcTi5M7dezlomfksj4OrzZgiUAvJMojL6W9omsjgHirkNkZGqhdYfAdFQ7YlDR-1XswL3vgZa678ic1zI97V2YJQr8/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            },
+            {
+                "collection": "Kilowatt",
+                "weaponName": "Glock-18",
+                "skinName": "Block-18",
+                "quality": "Restricted",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "0.67",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgposbaqKAxf1P_HcjZ97s6_l4u0mvj6N6nYl2Vu5Mx2gv2Pp9jxjAa3r0JtZz-icNTAcAI9aQrU-wW-yenmhJG8tZiaynRk63YgtmGdwUJc6eYXpA/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            },
+            {
+                "collection": "Kilowatt",
+                "weaponName": "USP-S",
+                "skinName": "Jawbreaker",
+                "quality": "Classified",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "1.00",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpoo6m1FBRp3_bGcjhQ08mlhJO0k_jzNKLummJW4NE_iLGVpN-n3Qfs-RFtY2DzIo-TIFM8Ml7Zqwfow7js08W-vprAn3I16T5iuygX9mc8ew/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            },
+            {
+                "collection": "Kilowatt",
+                "weaponName": "Zeus x27",
+                "skinName": "Olympus",
+                "quality": "Classified",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "0.67",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpooru2LhVfyfbdYgJW5Mm4kIWZqPD7N4Tdn2xZ_It12-iSp4r00AGw-xFtZT2gIofAd1c4NVzYq1Lvybrt1JC-vZnMwCFmpGB8spRMR_rC/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            },
+            {
+                "collection": "Kilowatt",
+                "weaponName": "M4A1-S",
+                "skinName": "Black Lotus",
+                "quality": "Classified",
+                "tradupInput": true,
+                "floatMin": "0.00",
+                "floatMax": "0.70",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpou-6kejhz2v_Nfz5H_uO7wIHahMj2P7rSnVRd59FkmdbN_Iv9nBrg8hdram6gJoGRdAE_ZVqC_FS2l-68gcW06ZibnCNj7Cgk4X2Olh3hn1gSOQ4iuyOq/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            },
+            {
+                "collection": "Kilowatt",
+                "weaponName": "AWP",
+                "skinName": "Chrome Cannon",
+                "quality": "Covert",
+                "tradupInput": false,
+                "floatMin": "0.00",
+                "floatMax": "1.00",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot621FAZ3w8zcdDBS6c6zkL-HnvD8J_XTxW0Bu5Vy0-iYp9Xx0Vex_UA9aj2iIdPHewM9MljXr1Lqwuvn1Mftot2XnrCoW5Yv/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            },
+            {
+                "collection": "Kilowatt",
+                "weaponName": "AK-47",
+                "skinName": "Inheritance",
+                "quality": "Covert",
+                "tradupInput": false,
+                "floatMin": "0.00",
+                "floatMax": "0.80",
+                "imageURL": "https://steamcommunity-a.akamaihd.net/economy/image/-9a81dlWLwJ2UUGcVs_nsVtzdOEdtWwKGZZLQHTxDZ7I56KU0Zwwo4NUX4oFJZEHLbXH5ApeO4YmlhxYQknCRvCo04DEVlxkKgpot7HxfDhh2MzYfi9B6dC3nY60m_7zO6-fzjwHvJEn2OqWotmi3gXt_BVtYD-ncIWcIA85YV-ErwK-ley-18e06oOJlyU3nvbOMA/512fx384f",
+                "collectionURL": "/collections/kilowatt.webp"
+            }
+        ]
 
     }
 ]
